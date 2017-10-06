@@ -13,6 +13,6 @@ class WebhooksController < ApplicationController
 
     # Webhook::Received.save(data: data, integration: params[:integration_name])
 
-    render nothing: true
+    render json: :ok
   end
 end
